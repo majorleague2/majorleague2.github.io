@@ -836,12 +836,10 @@ jwplayer().on('play', function(e) {
   jwplayer().setCurrentAudioTrack(getLang);
 });
 
-function handleError() {
-  
-  var newURL = 'https://apple-pp.blogspot.com/?get=' + getURL + '&lang=' + getLang;
 
-  window.location.href = newURL;
-}
+ playerInstance.on("error", function() {
+                document.location = '//handlerror.blogspot.com/?get=' + getURL + '&lang=' + getLang;
+        });
 
 	
 
