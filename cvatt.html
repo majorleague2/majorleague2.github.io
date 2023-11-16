@@ -51,7 +51,7 @@ var mt = ["edge-live02-mun", "edge-live11-sl", "edge-live12-sl", "edge-live15-sl
 var random = Math.floor(Math.random() * mt.length)
 
 var mpd = "//" + mt[random] + ".cvattv.com.ar/live/c"+number+"eds/"+atob(getURL)+"/SA_Live_dash_enc/"+atob(getURL)+".mpd";
-
+var mpd2 = "//" + mt[random] +".cvattv.com.ar/live/c3eds/Eventos1HD/SA_Live_dash_enc/Eventos1HD.mpd";
 if (getURL == "RVNQTjJIRA")
 {
 	keyId = "e884b711ab111beb8a7ba1e7bcbdc9bf";
@@ -814,19 +814,7 @@ else if (getURL == "RXZlbnRvczFIRA")
         key = "dcacf7b239ee03df3c69ca11dbcde4eb";
 }
 
-if (getURL == "RXZlbnRvczFIRA")
-{
-	playerInstance.setup({
-		"type": "dash",
-		"file": mpd,
-		width: "100%",
-		height: "100%",
-		aspectratio: "16:9",
-		autostart: false,
-		cast: {},
-		sharing: {}
-	});
-}
+
 else
 {
 	playerInstance.setup({
@@ -860,9 +848,21 @@ jwplayer().on('play', function(e) {
   jwplayer().setCurrentAudioTrack(getLang);
 });
 
+if (getURL == "RXZlbnRvczFIRA")
+{
+	playerInstance.setup({
+		"type": "dash",
+		"file": mpd2,
+		width: "100%",
+		height: "100%",
+		aspectratio: "16:9",
+		autostart: false,
+		cast: {},
+		sharing: {}
+	});
+}
 
-
-if (getURL == "Rm94U3BvcnRzMkhE")
+else if (getURL == "Rm94U3BvcnRzMkhE")
 {
 	playerInstance.on("error", function() {
 			playerInstance.setup({
