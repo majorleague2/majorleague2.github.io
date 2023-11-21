@@ -1,48 +1,45 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <style>body {margin:0;padding:0} .jw-logo-button { display:none }</style>
-    <style type="text/css">.jw-icon.jw-icon-inline.jw-button-color.jw-reset.jw-playlist-btn {display: none;}</style><script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
-<script>
-    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-</script>
-<script cdnd='acacdn.com' data-adel='lwsu' data-cfasync='false' src='//acacdn.com/script/suv4.js' zid='7425742'></script>
-<script data-cfasync="false" type="text/javascript" src="//predictivadnetwork.com/a/display.php?r=7537270"></script>
+    <style type="text/css">.jw-icon.jw-icon-inline.jw-button-color.jw-reset.jw-playlist-btn {display: none;}</style>
+    <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+    <script>
+        jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+    </script>
 </head>
 <body>
     <div id='player'></div>
+
     <script type='text/javascript'>
-    function getParameterByName(name) {
-	name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
-	var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
-	results = regex.exec(location.search);
-	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-var getURL = getParameterByName('get');
+        var getURL = getParameterByName('get');
 
-    </script> <script>
-      
-        var hls = "https://30m-str02.lcdn.claro.com.do/bpk-token/mfgqcfecajaaaaaaasm22baaaaaaaaaaaaakta3gdcnedcng/Content/HLS_HLS_FK/Live/Channel("+atob(getURL)+")/index.m3u8";
-    
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+            var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
 
-      
+        if (getURL) {
+            var hls = `https://30m-str02.lcdn.claro.com.do/bpk-token/mfgqcfecajaaaaaaasm22baaaaaaaaaaaaakta3gdcnedcng/Content/HLS_HLS_FK/Live/Channel(${getURL})/index.m3u8`;
 
-  if (getURL === "SEJP") {
-            
-        }	
-	    
-       var playerInstance = jwplayer("player");
-		playerInstance.setup({
-			file: hls,
-      width: "100%",
-			height: "100%",
-			aspectratio: "16:9",
-			autostart: false,
-			cast:{}
-		});	
+            var playerInstance = jwplayer("player");
+
+            playerInstance.setup({
+                file: hls,
+                width: "100%",
+                height: "100%",
+                aspectratio: "16:9",
+                autostart: false,
+                cast: {},
+                onError: function(error) {
+                    console.error("Error en el reproductor:", error);
+                }
+            });
+        } else {
+            console.error("No se proporcionó un parámetro 'get' en la URL.");
+        }
     </script>
 </body>
 </html>
