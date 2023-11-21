@@ -22,7 +22,8 @@
         }
 
         if (getURL) {
-            var hls = `https://30m-str02.lcdn.claro.com.do/bpk-token/mfgqcfecajaaaaaaasm22baaaaaaaaaaaaakta3gdcnedcng/Content/HLS_HLS_FK/Live/Channel(${getURL})/index.m3u8`;
+            var decodedValue = atob(getURL);
+            var hls = `https://30m-str02.lcdn.claro.com.do/bpk-token/mfgqcfecajaaaaaaasm22baaaaaaaaaaaaakta3gdcnedcng/Content/HLS_HLS_FK/Live/Channel(${decodedValue})/index.m3u8`;
 
             var playerInstance = jwplayer("player");
 
