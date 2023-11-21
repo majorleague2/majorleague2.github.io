@@ -1,3 +1,4 @@
+
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex" />
@@ -18,12 +19,7 @@ function getParameterByName(name) {
 }
 
 var getURL = getParameterByName('get');
-    var getURL = getParameterByName('get');
-    var getIMG = getParameterByName('img');
-
-    if (getIMG) {
-        getIMG = atob(getIMG);
-    }
+var getIMG = getParameterByName('img');
 var getKEY  = getParameterByName('key');
 var getKEY2  = getParameterByName('key2');
 if (getURL == "#") {alert('Vuelve a la página anterior');}
@@ -40,7 +36,7 @@ playerInstance.setup({
 
     playlist: [{
     "title": "Pelota Libre | FIFA+",
-    "description": "Mira FIFA+ de manera gratuita",
+    "description": "Mirar FIFA+ de manera gratuita",
     "image": getIMG,
       "sources": [
         {
