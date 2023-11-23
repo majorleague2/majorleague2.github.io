@@ -1,9 +1,15 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="robots" content="noindex">
+    <meta http-Equiv="Cache-Control" Content="no-cache" />
+    <meta http-Equiv="Pragma" Content="no-cache" />
+    <meta http-Equiv="Expires" Content="0" />
+    <meta name="robots" content="noindex,nofollow">
     <style>body {margin:0;padding:0}</style>
     <style type="text/css">.jw-icon.jw-icon-inline.jw-button-color.jw-reset.jw-playlist-btn {display: none;}</style>
-    <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+    <script src="//ssl.p.jwpcdn.com/player/v/8.21.2/jwplayer.js"></script>
     <script>
         jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
     </script>
@@ -24,19 +30,20 @@
         var videoURL;
 
         if (getURL) {
-            var mpdBase = "https://30m-str02.lcdn.claro.com.do/bpk-token/mfgqcfecajaaaaaaasm22baaaaaaaaaaaaakta3gdcnedcng/Content/HLS_HLS_FK/Live/Channel(" + getURL + ")/index.m3u8";
+            var mpdBase = "https://dolocallivechannelhls.clarovideo.com/Content/HLS_HLS_FK/Live/Channel(" + getURL + ")/index.m3u8";
             videoURL = mpdBase;
         }
 
         var playerInstance = jwplayer("player");
         playerInstance.setup({
             file: videoURL,
+	    type: "hls",
             width: "100%",
             height: "100%",
             aspectratio: "16:9",
             autostart: false,
             cast:{}
-        }); 
+        });
     </script>
 </body>
 </html>
