@@ -20,33 +20,7 @@
     ]
  },
 
-      {
-    "category":"CONGOLD",
-    "match":"Copa Oro Femenil: Jamaica vs. Panamá",
-    "time":"01:00",
-    "channels":[
-       {
-          "name":"ESPN 2 MX",
-          "link":"https://television-libre.online/html/eventos/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9odG1sL2ZsMy8/Z2V0PUVTUE4ySEQ=",
-          "quality":"Calidad 1080p"
-       }
-      
-    ]
- },
 
-     {
-    "category":"CONGOLD",
-    "match":"Copa Oro Femenil: Nicaragua vs. Honduras",
-    "time":"01:00",
-    "channels":[
-       {
-          "name":"ESPN MX",
-          "link":"https://television-libre.online/html/eventos/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9odG1sL2ZsMy8/Z2V0PUVTUE5IRA==",
-          "quality":"Calidad 1080p"
-       }
-      
-    ]
- },
  {
     "category":"URU",
     "match":"Primera División: Montevideo City Torque vs. Maldonado",
