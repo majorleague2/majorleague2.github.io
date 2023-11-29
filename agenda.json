@@ -6,58 +6,6 @@
  
 
 
-
-   {
-      "category":"TE",
-      "match":"ATP Finals: Assche vs. Shelbayh",
-      "time":"18:00",
-      "channels":[
-         {
-            "name":"Star+",
-            "link":"https://television-libre.online/star-plus/",
-            "quality":"Calidad 720p"
-         }
-      ]
-   },
-
-
-
-
- {
-    "category":"AR",
-    "match":"Copa de la Liga Profesional: Barracas Central vs. Argentinos",
-    "time":"23:00",
-    "channels":[
-       {
-          "name":"TNT Sports",
-          "link":"https://television-libre.online/en-vivo/tnt-sports/",
-          "quality":"Calidad 1080p"
-       },
-       {
-          "name":"VIX+",
-          "link":"https://television-libre.online/vix-plus/",
-          "quality":"Calidad 1080p"
-       },
-       {
-          "name":"TyC Sports Internacional",
-          "link":"https://television-libre.online//html/eventos/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9odG1sL2ZsLz9nZXQ9VkhsRFgwbHVkR1Z5Ym1GamFXOXVZV3c=",
-          "quality":"Calidad 720p"
-       }
-    ]
- },
- {
-    "category":"URU",
-    "match":"Primera División: Plaza Colonia vs. Racing",
-    "time":"23:00",
-    "channels":[
-     
-       {
-          "name":"Star+",
-          "link":"https://television-libre.online/star-plus/",
-          "quality":"Calidad 720p"
-       }
-    ]
- },
      {
     "category":"NHL",
     "match":"NHL: Philadelphia Flyers vs. Carolina Hurricanes",
