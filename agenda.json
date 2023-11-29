@@ -87,15 +87,16 @@
       "time":"00:15",
       "channels":[
          {
-            "name":"VIX+",
-            "link":"https://television-libre.online/html/red32/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
-            "quality":"Calidad 1080p"
-         },
-         {
             "name":"Win Sports +",
             "link":"https://television-libre.online/html/red17/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL3dpbi1zcG9ydHMtcHJlbWl1bS8=",
             "quality":"Calidad 1080p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red32/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
          }
+         
       ]
    },
    {
@@ -191,16 +192,17 @@
       "match":"Liga Betplay: Deportivo Cali vs. Deportes Tolima",
       "time":"02:30",
       "channels":[
+                  {
+            "name":"Win Sports +",
+            "link":"https://television-libre.online/html/red17/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL3dpbi1zcG9ydHMtcHJlbWl1bS8=",
+            "quality":"Calidad 1080p"
+                  },
          {
             "name":"VIX+",
             "link":"https://television-libre.online/html/red37/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
             "quality":"Calidad 1080p"
-         },
-         {
-            "name":"Win Sports +",
-            "link":"https://television-libre.online/html/red17/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL3dpbi1zcG9ydHMtcHJlbWl1bS8=",
-            "quality":"Calidad 1080p"
          }
+
       ]
    },
 
