@@ -519,6 +519,12 @@
       "match":"Brasileirão: Palmeiras vs. América Mineiro",
       "time":"01:30",
       "channels":[
+
+           {
+            "name":"ESPN 2",
+            "link":"https://television-libre.online/html/red45/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL2VzcG4tMi8=",
+            "quality":"Calidad 720p"
+         },
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red25/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
