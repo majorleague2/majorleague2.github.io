@@ -3,7 +3,7 @@
       "category":"AFC",
       "match":"AFC Champions League: Kitchee vs. Jeonbuk Motors",
       "time":"11:00",
-      "chanels":[
+      "channels":[
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
@@ -15,7 +15,7 @@
       "category":"AFC",
       "match":"AFC Champions League: Ventforet Kofu vs. Melbourne City",
       "time":"11:00",
-      "chanels":[
+      "channels":[
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red2/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
@@ -27,7 +27,7 @@
       "category":"AFC",
       "match":"AFC Champions League: Urawa Reds vs. Wuhan Three Towns",
       "time":"11:00",
-      "chanels":[
+      "channels":[
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red3/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
@@ -39,7 +39,7 @@
       "category":"AFC",
       "match":"AFC Champions League: Pohang Steelers vs. Hà Nội FC",
       "time":"11:00",
-      "chanels":[
+      "channels":[
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red4/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
@@ -51,7 +51,7 @@
       "category":"AFC",
       "match":"AFC Champions League: Hangzhou vs. Buriram United",
       "time":"13:00",
-      "chanels":[
+      "channels":[
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red5/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
@@ -63,7 +63,7 @@
       "category":"UYL",
       "match":"UEFA Youth League: Real Sociedad vs. Salzburg",
       "time":"14:00",
-      "chanels":[
+      "channels":[
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red6/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
@@ -85,7 +85,7 @@
       "category":"AFC",
       "match":"AFC Champions League: Bangkok United vs. Lion City Sailors",
       "time":"15:00",
-      "chanels":[
+      "channels":[
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red8/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
@@ -97,7 +97,7 @@
       "category":"UYL",
       "match":"UEFA Youth League: Bayern München  vs. København",
       "time":"16:00",
-      "chanels":[
+      "channels":[
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red9/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
@@ -129,7 +129,7 @@
       "category":"TE",
       "match":"ATP Finals: Michelsen vs. Shelbayh",
       "time":"18:00",
-      "chanels":[
+      "channels":[
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red11/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
@@ -141,7 +141,7 @@
       "category":"CHA",
       "match":"UEFA Champions League: Galatasaray vs. Manchester United",
       "time":"18:45",
-      "chanels":[
+      "channels":[
          {
             "name":"FOX Sports",
             "link":"https://television-libre.online/html/red12/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL2ZveC1zcG9ydHMv",
@@ -168,7 +168,7 @@
       "category":"CHA",
       "match":"UEFA Champions League: Sevilla vs. PSV",
       "time":"18:45",
-      "chanels":[
+      "channels":[
          {
             "name":"ESPN 2",
             "link":"https://television-libre.online/html/red16/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL2VzcG4tMi8=",
@@ -195,7 +195,7 @@
       "category":"URU",
       "match":"Primera División: Liverpool vs. Boston River",
       "time":"20:30",
-      "chanels":[
+      "channels":[
          {
             "name":"Star+",
             "link":"https://television-libre.online/html/red20/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
