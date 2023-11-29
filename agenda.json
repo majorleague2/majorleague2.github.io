@@ -508,6 +508,21 @@
          }
         
       ]
-   }
+   },
+
+       {
+      "category":"URU",
+      "match":"Primera División: Defensor Sporting vs. River Plate",
+      "time":"01:15",
+      "channels":[
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red24/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         }
+      ]
+   },
+
+
    
 ]
