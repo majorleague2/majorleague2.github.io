@@ -65,19 +65,7 @@
     ]
  },
 
-   {
-    "category":"BAS",
-    "match":"Liga Nacional: Oberá vs. Boca",
-    "time":"02:00",
-    "channels":[
-       {
-          "name":"TyC Sports",
-          "link":"https://television-libre.online/en-vivo/tyc-sports/",
-          "quality":"Calidad 720p"
-       }
-      
-    ]
- },
+
   
     {
     "category":"MLB",
