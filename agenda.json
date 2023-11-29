@@ -203,4 +203,175 @@
          }
       ]
    }
+    {
+      "category":"CHA",
+      "match":"UEFA Champions League: Bayern München vs. København",
+      "time":"21:00",
+      "channels":[
+         {
+            "name":"FOX Sports 2",
+            "link":"https://television-libre.online/html/red21/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL2ZveC1zcG9ydHMtMi8=",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red22/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"HBO Max: TNT Sports",
+            "link":"https://television-libre.online/html/red23/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9oYm8tbWF4Lw==",
+            "quality":"Calidad 1080p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red24/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         }
+      ]
+   },
+
+
+      {
+      "category":"CHA",
+      "match":"UEFA Champions League: Arsenal vs. Lens",
+      "time":"21:00",
+      "channels":[
+         {
+            "name":"ESPN 2",
+            "link":"https://television-libre.online/html/red25/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL2VzcG4tMi8=",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red26/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"HBO Max: TNT Sports",
+            "link":"https://television-libre.online/html/red27/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9oYm8tbWF4Lw==",
+            "quality":"Calidad 1080p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red28/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         }
+      ]
+   },
+
+
+         {
+      "category":"CHA",
+      "match":"UEFA Champions League: Real Madrid vs. Napoli",
+      "time":"21:00",
+      "channels":[
+         {
+            "name":"FOX Sports ",
+            "link":"https://television-libre.online/html/red29/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL2ZveC1zcG9ydHMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red30/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"HBO Max: TNT Sports",
+            "link":"https://television-libre.online/html/red32/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9oYm8tbWF4Lw==",
+            "quality":"Calidad 1080p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red33/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         }
+      ]
+   },
+
+      {
+      "category":"CHA",
+      "match":"UEFA Champions League: Sporting Braga vs. Union Berlin",
+      "time":"21:00",
+      "channels":[
+         {
+            "name":"ESPN 3",
+            "link":"https://television-libre.online/html/red34/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL2VzcG4tMy8=",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red35/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"HBO Max: TNT Sports",
+            "link":"https://television-libre.online/html/red36/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9oYm8tbWF4Lw==",
+            "quality":"Calidad 1080p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red37/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         }
+      ]
+   },
+
+      {
+      "category":"CHA",
+      "match":"UEFA Champions League: Benfica vs. Inter",
+      "time":"21:00",
+      "channels":[
+         {
+            "name":"ESPN",
+            "link":"https://television-libre.online/html/red38/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL2VzcG4v",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red39/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"HBO Max: TNT Sports",
+            "link":"https://television-libre.online/html/red40/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9oYm8tbWF4Lw==",
+            "quality":"Calidad 1080p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red41/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         }
+      ]
+   },
+
+  {
+      "category":"CHA",
+      "match":"UEFA Champions League: Benfica vs. Inter",
+      "time":"21:00",
+      "channels":[
+         {
+            "name":"FOX Sports 3",
+            "link":"https://television-libre.online/html/red42/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL2ZveC1zcG9ydHMtMy8=",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red43/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"HBO Max: TNT Sports",
+            "link":"https://television-libre.online/html/red44/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9oYm8tbWF4Lw==",
+            "quality":"Calidad 1080p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red45/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         }
+      ]
+   }
+   
+   
 ]
