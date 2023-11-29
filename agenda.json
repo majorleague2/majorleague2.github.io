@@ -371,7 +371,143 @@
             "quality":"Calidad 1080p"
          }
       ]
+   },
+
+   {
+      "category":"ES",
+      "match":"LaLiga: Mallorca vs. Cádiz",
+      "time":"21:00",
+      "channels":[
+         {
+            "name":"ESPN Extra",
+            "link":"https://television-libre.online/html/red/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL2VzcG4tZXh0cmEv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red2/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"DAZN LaLiga ES",
+            "link":"https://television-libre.online//html/eventos/?r=aHR0cHM6Ly9lbWJlZC5saWJyZWZ1dGJvbHR2LmNvbS9tcGRrLmh0bWw/Z2V0PWFIUjBjSE02THk5a1kyVXRZV3N0YkdsMlpYZDNaR0Y2Ymk1aGEyRnRZV2w2WldRdWJtVjBMMlJoYzJoa2NtMHZaR0Y2Ymkxc2FXNWxZWEl0TURRekwzTjBjbVZoYlM1dGNHUS9jRDEzWldJJmtleT1PREptT0dVeVlURTNaR0ZqTkRSak1HRXhPR1kyTmpBME56a3pORGxqTlRrJmtleTI9TVdJeE5EUm1Oek5sTm1abFptVTVNV05rTURWbU9EVXdaVEppTlRnNVpEQQ",
+            "quality":"Calidad 1080p"
+         }
+        
+      ]
+   },
+
+     {
+      "category":"BRA",
+      "match":"Brasileirão: Santos vs. Fluminense",
+      "time":"23:00",
+      "channels":[
+         
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red3/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red4/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         }
+        
+      ]
+   },
+
+    {
+      "category":"URU",
+      "match":"Primera División: Wanderers vs. Danubio",
+      "time":"23:00",
+      "channels":[
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red20/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         }
+      ]
+   },
+
+     {
+      "category":"BRA",
+      "match":"Brasileirão: Flamengo vs. Atlético Mineiro",
+      "time":"23:30",
+      "channels":[
+         
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red27/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red31/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         }
+        
+      ]
+   },
+    {
+      "category":"BRA",
+      "match":"Brasileirão: Bahia vs. São Paulo",
+      "time":"00:00",
+      "channels":[
+         
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red43/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red12/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         }
+        
+      ]
+   },
+
+    {
+      "category":"BRA",
+      "match":"Brasileirão: Cuiabá vs. Internacional",
+      "time":"00:00",
+      "channels":[
+         
+         {
+            "name":"Star+",
+            "link":"https://television-libre.online/html/red25/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9zdGFyLXBsdXMv",
+            "quality":"Calidad 720p"
+         },
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red31/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         }
+        
+      ]
+   },
+
+     {
+      "category":"COL",
+      "match":"Liga Betplay: Águilas Doradas vs. Junior",
+      "time":"00:15",
+      "channels":[
+         
+         {
+            "name":"VIX+",
+            "link":"https://television-libre.online/html/red32/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS92aXgtcGx1cy8=",
+            "quality":"Calidad 1080p"
+         },
+
+          {
+            "name":"Win Sports +",
+            "link":"https://television-libre.online/html/red17/?r=aHR0cHM6Ly90ZWxldmlzaW9uLWxpYnJlLm9ubGluZS9lbi12aXZvL3dpbi1zcG9ydHMtcHJlbWl1bS8=",
+            "quality":"Calidad 1080p"
+         }
+        
+      ]
    }
-   
    
 ]
