@@ -838,42 +838,32 @@ if (getURL == "RXZlbnRvczFIRA")
 
 else
 {
-	var playerInstance = jwplayer('player'); 
+playerInstance.setup({
+  playlist: [{
+    sources: [{
+      default: false,
+      file: mpd,
+      drm: {
+        clearkey: { keyId: keyId, key: key }
+      }
+    }]
+  }],
+  autostart: false,
+  cast: {},
+  sharing: {}
+});
 
-  playerInstance.setup({
-    playlist: [{
-      sources: [{
-        default: false,
-        type: 'dash',
-        file: mpd,
-        drm: {
-          clearkey: { keyId: 'keyId', key: 'key' }
-        },
-        label: '0'
-      }]
-    }],
-    width: '100%',
-    height: '100%',
-    aspectratio: '16:9',
-    autostart: false,
-    cast: {},
-    sharing: {}
-  });
 
-  setTimeout(function () {
-    
-    var availableQualities = playerInstance.getQualityLevels();
+var availableQualities = playerInstance.getQualityLevels();
 
-  
-    var lowestQualityIndex = 0;
-    playerInstance.setCurrentQuality(lowestQualityIndex);
 
-    
-    setTimeout(function () {
-      playerInstance.setCurrentQuality(-1); 
-    }, 3000);
-  }, 1000); 
-}
+var lowestQualityIndex = 0;
+playerInstance.setCurrentQuality(lowestQualityIndex);
+
+
+setTimeout(function () {
+  playerInstance.setCurrentQuality(-1); 
+}, 3000);
 if (getLang == "") {
 	getLang = 1;
 }
