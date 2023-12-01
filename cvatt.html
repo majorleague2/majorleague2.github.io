@@ -838,6 +838,9 @@ if (getURL == "RXZlbnRvczFIRA")
 
 else
 {
+// ...
+
+// Configuración inicial del reproductor
 playerInstance.setup({
   playlist: [{
     sources: [{
@@ -864,6 +867,9 @@ playerInstance.setCurrentQuality(lowestQualityIndex);
 setTimeout(function () {
   playerInstance.setCurrentQuality(-1); 
 }, 3000);
+
+
+
 if (getLang == "") {
 	getLang = 1;
 }
