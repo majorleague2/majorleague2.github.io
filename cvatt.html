@@ -31,7 +31,7 @@ var getKEY2  = getParameterByName('key2');
 if (getURL == "") {alert('Vuelve a la pÃƒÆ’Ã‚Â¡gina anterior');}
 </script>
 
-<div id="player"></div>
+<div id="setupPlayer"></div>
 <script>
 
 var playerInstance= jwplayer("player");
@@ -49,8 +49,10 @@ number = 4;
 else
 number = 3;
 
-var mpd;  
+// Declara la variable mpd globalmente
+var mpd;
 
+// Obtén la información de la IP y construye mpd
 $.getJSON("https://directory.cookieyes.com/api/v1/ip", function (response) {
     var mt;
 
@@ -65,8 +67,8 @@ $.getJSON("https://directory.cookieyes.com/api/v1/ip", function (response) {
 
     mpd = "//" + mt[random] + ".cvattv.com.ar/live/c" + number + "eds/" + atob(getURL) + "/SA_Live_dash_enc/" + atob(getURL) + ".mpd";
 
-
-    console.log("mpd:", mpd);
+    // Configura el reproductor después de obtener la URL mpd
+    setupPlayer();
 });
 
 
@@ -861,28 +863,28 @@ if (getURL == "RXZlbnRvczFIRA")
 
 else
 {
-playerInstance.setup({
-
-		playlist: [{
-			"sources": [
-				{
-					"default": false,
-					"type": "dash",
-					"file": mpd,
-					"drm": {
-						"clearkey": { "keyId": keyId, "key": key }
-					},
-					"label": "0"
-				}
-			]
-		}],
-		width: "100%",
-		height: "100%",
-		aspectratio: "16:9",
-		autostart: false,
-		cast: {},
-		sharing: {}
-	});
+function setupPlayer() {
+    playerInstance.setup({
+        playlist: [{
+            "sources": [
+                {
+                    "default": false,
+                    "type": "dash",
+                    "file": mpd,
+                    "drm": {
+                        "clearkey": { "keyId": keyId, "key": key }
+                    },
+                    "label": "0"
+                }
+            ]
+        }],
+        width: "100%",
+        height: "100%",
+        aspectratio: "16:9",
+        autostart: false,
+        cast: {},
+        sharing: {}
+    });
 }
 if (getLang == "") {
 	getLang = 1;
