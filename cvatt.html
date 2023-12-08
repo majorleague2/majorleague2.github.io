@@ -1,3 +1,5 @@
+
+
 <style type="text/css">
 html, body {
    margin: 0;
@@ -13,7 +15,6 @@ html, body {
 
 <script src="//ssl.p.jwpcdn.com/player/v/8.21.0/jwplayer.js"></script>
 <script> jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script type="text/javascript">
 function getParameterByName(name) {
@@ -29,12 +30,14 @@ var getIMG = getParameterByName('img');
 var getKEY  = getParameterByName('key');
 var getKEY2  = getParameterByName('key2');
 if (getURL == "") {alert('Vuelve a la pÃƒÆ’Ã‚Â¡gina anterior');}
+
 </script>
 
-<div id="Player"></div>
+
+<div id="player"></div>
 <script>
 
-var playerInstance= jwplayer("Player");
+var playerInstance= jwplayer("player");
 
 if (getURL == "QTNfQ2luZQ==" || getURL == "Rmxvd19NdXNpY19YUA==" || getURL == "QUVIRA==" || getURL == "SG9sYV9UVg==" || getURL == "QVhOSEQ=" || getURL == "TVRWMDA=" || getURL == "V2FybmVySEQ=" || getURL == "R0VOX1RW" || getURL == "Rm94X1Nwb3J0c19QcmVtaXVuX0hE" || getURL == "VG9kb05vdGljaWFz" || getURL == "VHlDU3BvcnQ" || getURL == "QW1lcmljYTI0" || getURL == "QzVO" || getURL == "TGFfTmFjaW9u" || getURL == "Q3JvbmljYVRW" || getURL == "Q2FuYWxfOF9UdWN1bWFu" || getURL == "UGFyYWd1YXlfVFY=" || getURL == "UGFyYW1vdW50" || getURL == "Q29tZWR5Q2VudHJhbA" || getURL == "Rmxvd19NdXNpY19YUA==" || getURL == "Rmxvd19NdXNpY18x" || getURL == "Rmxvd19NdXNpY18y" || getURL == "Rmxvd19NdXNpY18z" || getURL == "Qm9vbWVyYW5n" || getURL == "RHJlYW13b3Jrcw==" || getURL == "QW5pbWFsUGxhbmV0" || getURL == "SGlzdG9yeUhE" ||  getURL == "SUQ=" || getURL == "QnJhdm9UVg==" || getURL == "U29ueUhE" || getURL == "VHJ1VFY=" || getURL == "SEJPX1BPUA==" || getURL == "RGlzY292ZXJ5VHVyYm8=" || getURL == "RGlzbmV5SnI=")
 number = 7;
@@ -49,7 +52,6 @@ number = 4;
 else
 number = 3;
 
-
 var mt = ["edge-live11-hr", "edge-live12-hr", "edge-live13-hr", "edge-live14-hr", "edge-live16-hr", "edge-live17-hr", "edge-live31-hr", "edge-live12-sl", "edge-live13-sl", "edge-live15-sl", "edge-live16-sl", "edge-live17-sl", "edge-live31-sl", "edge-live32-sl"];
 var random = Math.floor(Math.random() * mt.length)
 
@@ -57,8 +59,6 @@ console.log("Selected mt:", mt[random]);
 	
 var mpd = "//" + mt[random] + ".cvattv.com.ar/live/c"+number+"eds/"+atob(getURL)+"/SA_Live_dash_enc/"+atob(getURL)+".mpd";
 var mpd2 = "//" + mt[random] +".cvattv.com.ar/live/c3eds/Eventos1HD/SA_Live_dash_enc/Eventos1HD.mpd";
-
-
 if (getURL == "RVNQTjJIRA")
 {
 	keyId = "e884b711ab111beb8a7ba1e7bcbdc9bf";
@@ -70,13 +70,13 @@ else if (getURL == "U3lGeQ==")
         key = "18d9faccdaf2d15807d0a3f713e8b2a4";
 }
 
+ 
 else if (getURL == "UlBDX0M0")  // el trece py
 {
         keyId = "a8093cdcb2d504bd38f16764bd21b6e5";
         key = "bfcf3b033b5f0b5ae020751a6746326f";
 }
 	
-
 else if (getURL == "Q2FydG9vbk5ldHdvcms=") // CArton NeTwork
 {
         keyId = "d7df56efaa36a71141d238854cc46d1d";
@@ -849,28 +849,28 @@ if (getURL == "RXZlbnRvczFIRA")
 
 else
 {
-function Player() {
-    playerInstance.setup({
-        playlist: [{
-            "sources": [
-                {
-                    "default": false,
-                    "type": "dash",
-                    "file": mpd,
-                    "drm": {
-                        "clearkey": { "keyId": keyId, "key": key }
-                    },
-                    "label": "0"
-                }
-            ]
-        }],
-        width: "100%",
-        height: "100%",
-        aspectratio: "16:9",
-        autostart: false,
-        cast: {},
-        sharing: {}
-    });
+	playerInstance.setup({
+
+		playlist: [{
+			"sources": [
+				{
+					"default": false,
+					"type": "dash",
+					"file": mpd,
+					"drm": {
+						"clearkey": { "keyId": keyId, "key": key }
+					},
+					"label": "0"
+				}
+			]
+		}],
+		width: "100%",
+		height: "100%",
+		aspectratio: "16:9",
+		autostart: false,
+		cast: {},
+		sharing: {}
+	});
 }
 if (getLang == "") {
 	getLang = 1;
@@ -879,4 +879,202 @@ if (getLang == "") {
 jwplayer().on('play', function(e) {
   jwplayer().setCurrentAudioTrack(getLang);
 });
+
+
+
+if (getURL == "Rm94U3BvcnRz")
+{
+        playerInstance.on("error", function() {
+            window.location = 'https://whitemouseapple.com/fox1.html';
+        });
+}
+else if (getURL == "Rm94U3BvcnRzMkhE")
+{
+	playerInstance.on("error", function() {
+			playerInstance.setup({
+				playlist: [{
+					"sources": [
+						{
+							"default": false,
+							"type": "dash",
+							"file": atob("aHR0cHM6Ly9hcmxvY2FsbGl2ZWNoYW5uZWxzZGFzaC5sY2RuLmNsYXJvdHYuY29tLmFyL0NvbnRlbnQvREFTSF9EQVNIX0ZLL0xpdmUvY2hhbm5lbChGT1hfU1BPUlRTXzIpL21hc3Rlci5tcGQ"),
+							"drm": {
+								"clearkey": { "keyId": atob("ZDZlMzQ3ZTU1Zjc5M2RmMTFlNGVkN2ZjNGNhMzk3ZGQ"), "key": atob("Y2NjMGRmNDE0NTE1N2FhNzUzZTYxYTM5NDA2MDNkMGI") }
+							},
+							"label": "0"
+						}
+					]
+				}],
+				width: "100%",
+				height: "100%",
+				aspectratio: "16:9",
+				autostart: true,
+				cast: {},
+				sharing: {}
+			});
+	});
+}
+else if (getURL == "RVNQTjJIRA")
+{
+	playerInstance.on("error", function() {
+			playerInstance.setup({
+				playlist: [{
+					"sources": [
+						{
+							"default": false,
+							"type": "dash",
+							"file": atob("aHR0cHM6Ly9hcmxvY2FsbGl2ZWNoYW5uZWxzZGFzaC5sY2RuLmNsYXJvdHYuY29tLmFyL0NvbnRlbnQvREFTSF9EQVNIX0ZLL0xpdmUvY2hhbm5lbChFU1BOKS9tYXN0ZXIubXBk"),
+							"drm": {
+								"clearkey": { "keyId": atob("ZTI3MDExOTRhNTUxZDMwYjM1YTdkNDkzOTM3ZTUwZjE"), "key": atob("MzgyZmYwMTUyMjc4ZDhiYTk0NmQ0ZmQ4MmEwOWIyMTI") }
+							},
+							"label": "0"
+						}
+					]
+				}],
+				width: "100%",
+				height: "100%",
+				aspectratio: "16:9",
+				autostart: true,
+				cast: {},
+				sharing: {}
+			});
+	});
+}
+else if (getURL == "RVNQTjJfQXJn")
+{
+	playerInstance.on("error", function() {
+			playerInstance.setup({
+				playlist: [{
+					"sources": [
+						{
+							"default": false,
+							"type": "dash",
+							"file": atob("aHR0cHM6Ly9hcmxvY2FsbGl2ZWNoYW5uZWxzZGFzaC5sY2RuLmNsYXJvdHYuY29tLmFyL0NvbnRlbnQvREFTSF9EQVNIX0ZLL0xpdmUvY2hhbm5lbChFU1BOMikvbWFzdGVyLm1wZA"),
+							"drm": {
+								"clearkey": { "keyId": atob("NTc5ZmMwY2QxMTg0MmJjZTljMDQ1YTBkNTVhYTQ4NzI"), "key": atob("YmY1NGQ5MjhlMjcwNjFhMTNmYWZkZGU5MzQxNDY0NzI") }
+							},
+							"label": "0"
+						}
+					]
+				}],
+				width: "100%",
+				height: "100%",
+				aspectratio: "16:9",
+				autostart: true,
+				cast: {},
+				sharing: {}
+			});
+	});
+}
+else if (getURL == "RVNQTkhE")
+{
+	playerInstance.on("error", function() {
+		playerInstance.setup({
+			playlist: [{
+				"sources": [
+					{
+						"default": false,
+						"type": "dash",
+						"file": atob("aHR0cHM6Ly9hcmxvY2FsbGl2ZWNoYW5uZWxzZGFzaC5sY2RuLmNsYXJvdHYuY29tLmFyL0NvbnRlbnQvREFTSF9EQVNIX0ZLL0xpdmUvY2hhbm5lbChFU1BOX0VYVFJBKS9tYXN0ZXIubXBk"),
+						"label": "0"
+					}
+				]
+			}],
+			width: "100%",
+			height: "100%",
+			aspectratio: "16:9",
+			autostart: true,
+			cast: {},
+			sharing: {}
+		});
+	});
+}
+else if (getURL == "RVNQTjM")
+{
+	playerInstance.on("error", function() {
+			playerInstance.setup({
+				playlist: [{
+					"sources": [
+						{
+							"default": false,
+							"type": "dash",
+							"file": atob("aHR0cHM6Ly9hcmxvY2FsbGl2ZWNoYW5uZWxzZGFzaC5sY2RuLmNsYXJvdHYuY29tLmFyL0NvbnRlbnQvREFTSF9EQVNIX0ZLL0xpdmUvY2hhbm5lbChFU1BOMykvbWFzdGVyLm1wZA"),
+							"drm": {
+								"clearkey": { "keyId": atob("MWI2NDUxODVjZDYyZDg4MWZhOTFmZDkyMTcwNjkwZWE"), "key": atob("ZTVmNzU5ZTI1NmM3NjhjNjM0OWRlYjljYzQ0NmNhYmU") }
+							},
+							"label": "0"
+						}
+					]
+				}],
+				width: "100%",
+				height: "100%",
+				aspectratio: "16:9",
+				autostart: true,
+				cast: {},
+				sharing: {}
+			});
+	});
+}
+else if (getURL == "Rm94X1Nwb3J0c19QcmVtaXVuX0hE")
+{
+        playerInstance.on("error", function() {
+            window.location = 'https://flash669.github.io/flow3/?get=aHR0cHM6Ly9yb3V0ZXIuY2RuLnJjcy5uZXQuYXIvbW5wL2VzcG5wcmVtaXVtL291dHB1dC5tcGQ=';
+        });
+}
+
+else if (getURL == "VHlDU3BvcnQ")
+{
+	playerInstance.on("error", function() {
+			playerInstance.setup({
+				playlist: [{
+					"sources": [
+						{
+							"default": false,
+							"type": "dash",
+							"file": atob("aHR0cHM6Ly9hcmxvY2FsbGl2ZWNoYW5uZWxzZGFzaC5sY2RuLmNsYXJvdHYuY29tLmFyL0NvbnRlbnQvREFTSF9EQVNIX0ZLL0xpdmUvY2hhbm5lbChUWUNfU1BPUlRTKS9tYXN0ZXIubXBk"),
+							"drm": {
+								"clearkey": { "keyId": atob("ZjdkY2FiODI5Y2FlZmZiNjEyNzQwYTFjNTFmMDQ3OGQ"), "key": atob("YjI0NjZiYjUxOWI3NTlhZTNkZTE4MTg5ODg1MzI0NTM") }
+							},
+							"label": "0"
+						}
+					]
+				}],
+				width: "100%",
+				height: "100%",
+				aspectratio: "16:9",
+				autostart: true,
+				cast: {},
+				sharing: {}
+			});
+	});
+}
+else if (getURL == "Q2FuYWw3")
+{
+	playerInstance.on("error", function() {
+			playerInstance.setup({
+				playlist: [{
+					"sources": [
+						{
+							"default": false,
+							"type": "dash",
+							"file": atob("aHR0cHM6Ly9hcmxvY2FsbGl2ZWNoYW5uZWxzZGFzaC5sY2RuLmNsYXJvdHYuY29tLmFyL0NvbnRlbnQvREFTSF9EQVNIX0ZLL0xpdmUvY2hhbm5lbChUVl9QVUJMSUNBKS9tYXN0ZXIubXBk"),
+							"drm": {
+								"clearkey": { "keyId": atob("Zjg4NzM3NWQxYzdmMDA3ZmIxMDQ0N2U4NDU4MWJlNzA"), "key": atob("ODE4MzAwNzkzMjM1OWEzY2YxNDUxOThiNTEyOTExOWM") }
+							},
+							"label": "0"
+						}
+					]
+				}],
+				width: "100%",
+				height: "100%",
+				aspectratio: "16:9",
+				autostart: true,
+				cast: {},
+				sharing: {}
+			});
+	});
+}
+
 </script>
+
+
