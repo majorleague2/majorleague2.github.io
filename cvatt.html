@@ -48,13 +48,28 @@ number = 4;
 else
 number = 3;
 
-var mt = ["edge-live11-hr", "edge-live12-hr", "edge-live13-hr", "edge-live14-hr", "edge-live16-hr", "edge-live17-hr", "edge-live31-hr", "edge-live12-sl", "edge-live13-sl", "edge-live15-sl", "edge-live16-sl", "edge-live17-sl", "edge-live31-sl", "edge-live32-sl",];
-var random = Math.floor(Math.random() * mt.length)
+$.getJSON("https://directory.cookieyes.com/api/v1/ip", function (response) {
+    var mt;
 
-console.log("Selected mt:", mt[random]);
-	
-var mpd = "//" + mt[random] + ".cvattv.com.ar/live/c"+number+"eds/"+atob(getURL)+"/SA_Live_dash_enc/"+atob(getURL)+".mpd";
-var mpd2 = "//" + mt[random] +".cvattv.com.ar/live/c3eds/Eventos1HD/SA_Live_dash_enc/Eventos1HD.mpd";
+    if (response.country != "AR" && response.country != "UY" && response.country != "PY") {
+        mt = ["edge-live11-hr", "edge-live12-hr", "edge-live13-hr", "edge-live14-hr", "edge-live16-hr", "edge-live17-hr", "edge-live31-hr", "edge-live12-sl", "edge-live13-sl", "edge-live15-sl", "edge-live16-sl", "edge-live17-sl", "edge-live31-sl", "edge-live32-sl"];
+    } else {
+        mt = ["edge-live02-mun", "edge-live03-mun", "edge-live04-mun", "edge-live05-mun", "edge-live06-mun", "edge-live07-mun", "edge-live08-mun", "edge-live09-mun", "edge-live10-mun"];
+    }
+
+    var random = Math.floor(Math.random() * mt.length);
+    console.log("Selected mt:", mt[random]);
+
+    var mpd;
+    if (response.country != "AR" && response.country != "UY" && response.country != "PY") {
+        mpd = "//" + mt[random] + ".cvattv.com.ar/live/c3eds/Eventos1HD/SA_Live_dash_enc/Eventos1HD.mpd";
+    } else {
+        mpd = "//" + mt[random] + ".cvattv.com.ar/live/c" + number + "eds/" + atob(getURL) + "/SA_Live_dash_enc/" + atob(getURL) + ".mpd";
+    }
+
+    console.log("mpd:", mpd);
+});
+
 if (getURL == "RVNQTjJIRA")
 {
 	keyId = "e884b711ab111beb8a7ba1e7bcbdc9bf";
