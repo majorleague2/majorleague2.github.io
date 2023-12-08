@@ -53,9 +53,9 @@ $.getJSON("https://directory.cookieyes.com/api/v1/ip", function (response) {
     var mt;
 
     if (response.country != "AR" && response.country != "UY" && response.country != "PY") {
-        mt = ["edge-live11-hr", "edge-live12-hr", "edge-live13-hr", "edge-live14-hr", "edge-live16-hr", "edge-live17-hr", "edge-live31-hr", "edge-live12-sl", "edge-live13-sl", "edge-live15-sl", "edge-live16-sl", "edge-live17-sl", "edge-live31-sl", "edge-live32-sl"];
-    } else {
         mt = ["edge-live02-mun"];
+    } else {
+        mt = ["edge-live11-hr", "edge-live12-hr", "edge-live13-hr", "edge-live14-hr", "edge-live16-hr", "edge-live17-hr", "edge-live31-hr", "edge-live12-sl", "edge-live13-sl", "edge-live15-sl", "edge-live16-sl", "edge-live17-sl", "edge-live31-sl", "edge-live32-sl"];
     }
 
     var random = Math.floor(Math.random() * mt.length);
