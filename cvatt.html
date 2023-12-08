@@ -31,10 +31,10 @@ var getKEY2  = getParameterByName('key2');
 if (getURL == "") {alert('Vuelve a la pÃƒÆ’Ã‚Â¡gina anterior');}
 </script>
 
-<div id="setupPlayer"></div>
+<div id="Player"></div>
 <script>
 
-var playerInstance= jwplayer("setupPlayer");
+var playerInstance= jwplayer("Player");
 
 if (getURL == "QTNfQ2luZQ==" || getURL == "Rmxvd19NdXNpY19YUA==" || getURL == "QUVIRA==" || getURL == "SG9sYV9UVg==" || getURL == "QVhOSEQ=" || getURL == "TVRWMDA=" || getURL == "V2FybmVySEQ=" || getURL == "R0VOX1RW" || getURL == "Rm94X1Nwb3J0c19QcmVtaXVuX0hE" || getURL == "VG9kb05vdGljaWFz" || getURL == "VHlDU3BvcnQ" || getURL == "QW1lcmljYTI0" || getURL == "QzVO" || getURL == "TGFfTmFjaW9u" || getURL == "Q3JvbmljYVRW" || getURL == "Q2FuYWxfOF9UdWN1bWFu" || getURL == "UGFyYWd1YXlfVFY=" || getURL == "UGFyYW1vdW50" || getURL == "Q29tZWR5Q2VudHJhbA" || getURL == "Rmxvd19NdXNpY19YUA==" || getURL == "Rmxvd19NdXNpY18x" || getURL == "Rmxvd19NdXNpY18y" || getURL == "Rmxvd19NdXNpY18z" || getURL == "Qm9vbWVyYW5n" || getURL == "RHJlYW13b3Jrcw==" || getURL == "QW5pbWFsUGxhbmV0" || getURL == "SGlzdG9yeUhE" ||  getURL == "SUQ=" || getURL == "QnJhdm9UVg==" || getURL == "U29ueUhE" || getURL == "VHJ1VFY=" || getURL == "SEJPX1BPUA==" || getURL == "RGlzY292ZXJ5VHVyYm8=" || getURL == "RGlzbmV5SnI=")
 number = 7;
@@ -49,28 +49,14 @@ number = 4;
 else
 number = 3;
 
-// Declara la variable mpd globalmente
-var mpd;
 
-// Obtén la información de la IP y construye mpd
-$.getJSON("https://directory.cookieyes.com/api/v1/ip", function (response) {
-    var mt;
+var mt = ["edge-live11-hr", "edge-live12-hr", "edge-live13-hr", "edge-live14-hr", "edge-live16-hr", "edge-live17-hr", "edge-live31-hr", "edge-live12-sl", "edge-live13-sl", "edge-live15-sl", "edge-live16-sl", "edge-live17-sl", "edge-live31-sl", "edge-live32-sl"];
+var random = Math.floor(Math.random() * mt.length)
 
-    if (response.country == "AR" || response.country == "UY" || response.country == "PY") {
-        mt = ["edge-live02-mun"];
-    } else {
-        mt = ["edge-live11-hr", "edge-live12-hr", "edge-live13-hr", "edge-live14-hr", "edge-live16-hr", "edge-live17-hr", "edge-live31-hr", "edge-live12-sl", "edge-live13-sl", "edge-live15-sl", "edge-live16-sl", "edge-live17-sl", "edge-live31-sl", "edge-live32-sl"];
-    }
-
-    var random = Math.floor(Math.random() * mt.length);
-    console.log("Selected mt:", mt[random]);
-
-    mpd = "//" + mt[random] + ".cvattv.com.ar/live/c" + number + "eds/" + atob(getURL) + "/SA_Live_dash_enc/" + atob(getURL) + ".mpd";
-
-    // Configura el reproductor después de obtener la URL mpd
-    setupPlayer();
-});
-
+console.log("Selected mt:", mt[random]);
+	
+var mpd = "//" + mt[random] + ".cvattv.com.ar/live/c"+number+"eds/"+atob(getURL)+"/SA_Live_dash_enc/"+atob(getURL)+".mpd";
+var mpd2 = "//" + mt[random] +".cvattv.com.ar/live/c3eds/Eventos1HD/SA_Live_dash_enc/Eventos1HD.mpd";
 
 
 if (getURL == "RVNQTjJIRA")
@@ -863,7 +849,7 @@ if (getURL == "RXZlbnRvczFIRA")
 
 else
 {
-function setupPlayer() {
+function Player() {
     playerInstance.setup({
         playlist: [{
             "sources": [
