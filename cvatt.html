@@ -49,7 +49,8 @@ number = 4;
 else
 number = 3;
 
-var mpd;
+var mpd;  
+
 $.getJSON("https://directory.cookieyes.com/api/v1/ip", function (response) {
     var mt;
 
@@ -62,11 +63,13 @@ $.getJSON("https://directory.cookieyes.com/api/v1/ip", function (response) {
     var random = Math.floor(Math.random() * mt.length);
     console.log("Selected mt:", mt[random]);
 
-    var mpd = "//" + mt[random] + ".cvattv.com.ar/live/c" + number + "eds/" + atob(getURL) + "/SA_Live_dash_enc/" + atob(getURL) + ".mpd";
+    mpd = "//" + mt[random] + ".cvattv.com.ar/live/c" + number + "eds/" + atob(getURL) + "/SA_Live_dash_enc/" + atob(getURL) + ".mpd";
 
-   
+
+    console.log("mpd:", mpd);
 });
-	
+
+
 
 if (getURL == "RVNQTjJIRA")
 {
