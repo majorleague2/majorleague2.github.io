@@ -919,7 +919,7 @@ if (getURL !== undefined && getURL !== null) {
 
 }
 
-/*var selectedLanguage = 1;
+var selectedLanguage = 1;
 var selectedLanguage2 = 0;
 var languageChangedDuringPlay = false;
 
@@ -927,14 +927,15 @@ jwplayer().on('play', function(e) {
   if (!languageChangedDuringPlay) {
     var currentLanguage = jwplayer().getCurrentAudioTrack();
 
-    if (currentLanguage !== selectedLanguage) {
+    if (currentLanguage !== selectedLanguage && currentLanguage !== selectedLanguage2) {
       jwplayer().setCurrentAudioTrack(selectedLanguage);
-      languageChangedDuringPlay = true; 
-    } else if (currentLanguage !== selectedLanguage2) {
-      jwplayer().setCurrentAudioTrack(selectedLanguage2);
       languageChangedDuringPlay = true; 
     }
   }
+});
+
+jwplayer().on('complete', function(e) {
+  languageChangedDuringPlay = false;
 });
 
 
