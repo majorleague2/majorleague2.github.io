@@ -878,7 +878,8 @@ if (getURL == "RXZlbnRvczFIRA")
 
 else
 {
-	var start = getParameterByName('start');
+
+var start = getParameterByName('start');
 var autostart = start !== undefined && start === "true";
 
 playerInstance.setup({
@@ -917,8 +918,10 @@ if (getURL !== undefined && getURL !== null) {
     });
 }
 
+	
 }
 
+	
 var selectedLanguage = 1;
 var selectedLanguage2 = 0;
 var languageChangedDuringPlay = false;
@@ -937,6 +940,7 @@ jwplayer().on('play', function(e) {
 jwplayer().on('complete', function(e) {
   languageChangedDuringPlay = false;
 });
+
 
 
 
