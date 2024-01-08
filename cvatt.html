@@ -50,11 +50,42 @@ number = 4;
 else
 number = 3;
 
-var mt = ["edge-live02-mun","edge-live11-hr", "edge-live14-hr", "edge-live15-hr", "edge-live16-hr", "edge-live17-hr", "edge-live31-hr", "edge-live32-hr", "edge-live11-sl", "edge-live12-sl", "edge-live13-sl", "edge-live15-sl", "edge-live16-sl", "edge-live17-sl", "edge-live31-sl","edge-live34-hr"];
-var random = Math.floor(Math.random() * mt.length)
-	
-var mpd = "//" + mt[random] + ".cvattv.com.ar/live/c"+number+"eds/"+atob(getURL)+"/SA_Live_dash_enc_2A/"+atob(getURL)+".mpd";
-console.log("Selected mt:", mt[random]);
+var mt = ["edge-live02-mun", "edge-live11-hr", "edge-live14-hr", "edge-live15-hr", "edge-live16-hr", "edge-live17-hr", "edge-live31-hr", "edge-live32-hr", "edge-live11-sl", "edge-live12-sl", "edge-live13-sl", "edge-live15-sl", "edge-live16-sl", "edge-live17-sl", "edge-live31-sl", "edge-live34-hr"];
+var random = Math.floor(Math.random() * mt.length);
+var selectedServer = mt[random];
+
+async function testMpdURL(url) {
+  return new Promise((resolve, reject) => {
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          resolve();
+        } else {
+          reject(new Error("HTTP request failed with status " + xhr.status));
+        }
+      }
+    };
+    xhr.open("GET", url, true);
+    xhr.send();
+  });
+}
+
+async function getRandomAvailableServer() {
+  var mpd = "//" + selectedServer + ".cvattv.com.ar/live/c" + number + "eds/" + atob(getURL) + "/SA_Live_dash_enc_2A/" + atob(getURL) + ".mpd";
+
+  try {
+    await testMpdURL(mpd);
+    console.log("Server:", selectedServer);
+    console.log("Url:", mpd);
+  } catch (error) {
+    console.error("Error al seleccionar el servidor:", error.message);
+    getRandomAvailableServer();
+  }
+}
+
+getRandomAvailableServer();
+
 /*async function testSubdomains() {
   for (let i = 0; i < mt.length; i++) {
     let subdomain = mt[i];
