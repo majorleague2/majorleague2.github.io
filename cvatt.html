@@ -62,7 +62,7 @@ async function testSubdomains() {
 
   for (let i = 0; i < mt.length; i++) {
     let subdomain = mt[i];
-    let mpd = "//" + subdomain + ".cvattv.com.ar/live/c" + number + "eds/" + atob(getURL) + "/SA_Live_dash_enc_2A/" + atob(getURL) + ".mpd";
+    var mpd = "//" + subdomain + ".cvattv.com.ar/live/c" + number + "eds/" + atob(getURL) + "/SA_Live_dash_enc_2A/" + atob(getURL) + ".mpd";
 
     try {
       let statusCode = await testMpdURL(mpd);
