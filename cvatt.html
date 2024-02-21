@@ -898,8 +898,40 @@ else
 var start = getParameterByName('start');
 var autostart = start !== undefined && start === "true";
 
-playerInstance.setup({
-    playlist: [{
+
+
+ var playerInstance = jwplayer("player");
+
+        function tryMPD(mts, index, onValid, onInvalid) {
+            if (index >= mts.length) {
+                onInvalid();
+                return;
+            }
+
+            var mpdURL = mts[index] + atob(getURL);
+            checkMPD(mpdURL, function(isValid) {
+                if (isValid) {
+                    onValid(mpdURL);
+                } else {
+                    tryMPD(mts, index + 1, onValid, onInvalid);
+                }
+            });
+        }
+
+        function checkMPD(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    callback(xhr.status === 200);
+                }
+            };
+            xhr.send();
+        }
+
+        tryMPD(mt, 0, function(validMPD) {
+            playerInstance.setup({
+                 playlist: [{
         "sources": [
             {
                 "default": false,
@@ -916,10 +948,11 @@ playerInstance.setup({
     height: "100%",
     aspectratio: "16:9",
     autostart: autostart,
-    cast: {},
-    sharing: {}
-});
+                cast: {},
+                sharing: {}
+            });
 
+	
 if (getURL !== undefined && getURL !== null) {
     playerInstance.on("error", function() {
         var redirectUrl = '/cvatt.html?get=' + getURL;
