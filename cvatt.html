@@ -53,16 +53,20 @@ var random = Math.floor(Math.random() * mt.length)
 console.log("Selected mt:", mt[random]);
 
 async function testSubdomains() {
-  for (let i = 0; i < mt.length; i++) {
-    let subdomain = mt[i];
-    let mpdURL = "//" + subdomain + ".cvattv.com.ar/live/c" + number + "eds/" + atob(getURL) + "/SA_Live_dash_enc_2A/" + atob(getURL) + ".mpd";
+  let randomIndex = Math.floor(Math.random() * mt.length);
+  let subdomain = mt[randomIndex];
+  
+  let mpdURL = "//" + subdomain + ".cvattv.com.ar/live/c" + number + "eds/" + atob(getURL) + "/SA_Live_dash_enc_2A/" + atob(getURL) + ".mpd";
 
-    try {
-      await testMpdURL(mpdURL);
-      console.log("Subdomain", subdomain, "is working.");
-    } catch (error) {
-      console.error("Subdomain", subdomain, "is not working. Error:", error.message);
-    }
+  try {
+    await testMpdURL(mpdURL);
+    console.log("Selected subdomain", subdomain, "is working.");
+
+    var mpd = mpdURL;
+    console.log("Selected mpd:", mpd);
+  } catch (error) {
+    console.error("Selected subdomain", subdomain, "is not working. Error:", error.message);
+    await testSubdomains();
   }
 }
 
@@ -82,10 +86,9 @@ function testMpdURL(url) {
     xhr.send();
   });
 }
+
 testSubdomains();
 
-	
-var mpd = "//" + mt[random] + ".cvattv.com.ar/live/c"+number+"eds/"+atob(getURL)+"/SA_Live_dash_enc_2A/"+atob(getURL)+".mpd";
 var mpd2 = "//" + mt[random] +".cvattv.com.ar/live/c3eds/Eventos1HD/SA_Live_dash_enc/Eventos1HD.mpd";
 if (getURL == "RVNQTjJIRA")
 {
