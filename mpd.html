@@ -930,7 +930,7 @@ async function testSubdomains() {
             let status = await testMpdURL(mpdURL);
             if (status === 200) {
                 console.log("MPD URL found:", mpdURL);
-                return mpdURL; // Devolvemos el MPD URL tan pronto como lo encontramos
+                return mpdURL;
             } else {
                 console.log("MPD URL", mpdURL, "returned status", status);
             }
@@ -947,7 +947,7 @@ function testMpdURL(url) {
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
-                resolve(xhr.status); // Devolvemos el estado de la solicitud
+                resolve(xhr.status);
             }
         };
         xhr.open("GET", url, true);
@@ -959,7 +959,6 @@ testSubdomains()
     .then((bestMpdURL) => {
         console.log("Best MPD URL:", bestMpdURL);
 
-        // Ahora puedes configurar tu playerInstance.setup() con el MPD seleccionado
         playerInstance.setup({
             playlist: [{
                 "sources": [
@@ -986,66 +985,7 @@ testSubdomains()
         console.error("Error:", error.message);
     });
 
-
 	
-if (getURL !== undefined && getURL !== null) {
-    
-    var errorCount = sessionStorage.getItem('errorCount');
-    if (!errorCount) {
-        errorCount = 0;
-    } else {
-        errorCount = parseInt(errorCount);
-    }
-
-    playerInstance.on("error", function() {
-        errorCount++;
-
-        if (errorCount >= 10) {
-            var redirectUrl = '/cvatt3.html?get=' + getURL;
-        } else {
-            var redirectUrl = '/cvatt.html?get=' + getURL;
-        }
-
-        if (getLang) {
-            redirectUrl += '&lang=' + getLang;
-        }
-
-        redirectUrl += '&start=true';
-   
-        sessionStorage.setItem('errorCount', errorCount);
-
-        window.location = redirectUrl;
-    });
-}	
-if (getURL == "Rm94X1Nwb3J0c19QcmVtaXVuX0hE")
-{
-	playerInstance.on("error", function() {
-		var redirectUrl = '/cvatt2.html?get=' + getURL;
-
-        if (getLang) {
-            redirectUrl += '&lang=' + getLang;
-        }
-
-        redirectUrl += '&start=true';
-
-        window.location = redirectUrl;
-	});
-}
-else if (getURL == "VE5UX1Nwb3J0c19IRA")
-{
-	playerInstance.on("error", function() {
-		var redirectUrl = '/cvatt2.html?get=' + getURL;
-
-        if (getLang) {
-            redirectUrl += '&lang=' + getLang;
-        }
-
-        redirectUrl += '&start=true';
-
-        window.location = redirectUrl;
-	});
-}
-
 	
 var getLang = getParameterByName('lang');
 var selectedLanguage = getLang;
