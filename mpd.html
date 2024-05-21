@@ -986,6 +986,20 @@ testSubdomains()
     });
 
 	
+if (getURL == "")
+{
+	playerInstance.on("error", function() {
+		var redirectUrl = '/mpd.html?get=' + getURL;
+
+        if (getLang) {
+            redirectUrl += '&lang=' + getLang;
+        }
+
+        redirectUrl += '&start=true';
+
+        window.location = redirectUrl;
+	});
+}
 	
 var getLang = getParameterByName('lang');
 var selectedLanguage = getLang;
